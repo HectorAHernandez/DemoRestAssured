@@ -1,0 +1,12 @@
+								GitHub Class Tips
+1- Create new repository in github.com --> click on New repository --> Provision name: DemoRestAssured --> click on Create 
+   Now we have an empty repository in github.com and we can send codes from our local machine into it so that others can 
+   use it.
+2- going to my local machine: first I have to let github.com which is the userId/email that I will be using to push/pull the code. We
+   are going to communicate with the github.com through the the CMD command prompt, but they are gui tool that allow this communication
+   in gui way: Intellij, Tortoise Git, Eclipse with a plugin. But for now we are going to learn it manually. 
+   This URL contains summary of basic commands:  https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.html
+   To let know to github.com who I am:    
+
+
+

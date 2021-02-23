@@ -61,3 +61,5 @@ Scenario: Verify if the DeletePlace API functionality is working successfuly
 			And The "status" in the response body is "OK"
 # Comment for git added by New User: line # 62		
 # Comment for git added by New User: line # 63
+# Comment for git added by Hector : line # 64
+# Comment for git added by Hector : line # 65

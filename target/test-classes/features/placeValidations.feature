@@ -59,3 +59,5 @@ Scenario: Verify if the DeletePlace API functionality is working successfuly
 			When The client calls "DeletePlaceAPI" API with "POST" request http method
 			Then The API call is successful with status code 200
 			And The "status" in the response body is "OK"
+# Comment for git added by New User: line # 62		
+# Comment for git added by New User: line # 63

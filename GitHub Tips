@@ -6,7 +6,56 @@
    are going to communicate with the github.com through the the CMD command prompt, but they are gui tool that allow this communication
    in gui way: Intellij, Tortoise Git, Eclipse with a plugin. But for now we are going to learn it manually. 
    This URL contains summary of basic commands:  https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.html
-   To let know to github.com who I am:    
+   To let know to github.com who I am using belolw git commands:
+   		- git config --global user.name "HectorAHernandez"    <Enter> (This is the user to log into the github.com website)
+   		- git config --global user.email "ssshhernandez@gmail.com"   <Enter>
+   
+3- Create a folder to hold the code to share with github.com: C:\Git\GitToPractices
+   - go to the created folder: cd \Git\GitToPractices     ---**** Note: in the future, to work with Github.com we have to come to this folder because
+                                                                                                       here is where we are going to create the ".git" init file.
+   - We have to initialize this folder so that GitHub.com can access and understand the codes in the folder, this is creating an 
+     init file:
+     C:\Git\GitToPractices>git init
+		"Initialized empty Git repository in C:/Git/GitToPractices/.git/" ** This ".git" file is created, it is a hidden file. 
+   - Now we are set to push to the github.com all the files we want from/in our folder. to accomplish this we have to:
+     1- Move the files from the folder to the "Staging Queue/Folder" using the "git Add" command.  (Staging is a working folder)
+        git add *  (add all the files)
+        git add filename (add specific file)
+        
+        The "git status" command shows all the files added to the Staging working folder
+        
+     2- Move the files from the "Staging Queue/Folder" to the "Commit Queue/Folder" using the "git commit -m "message" " command
+        where -m is required to indicate the documentation message that we have to provision and message is "first/second build..."
+        git commit -m "First committed code"
+        **** Now the codes are ready to be pushed to the github.com repository.
+      
+     3- Before we push the committed files we have to indicate our local .git where in the remote github.com server we will be sending the code, this
+        is we have to indicate which address (url) so that when we issue the "git push" command it automatically uses this address
+        
+        git remote add origin https://github.com/HectorAHernandez/DemoRestAssured.git
+        this add a remote connection the github.com repository having the "origin" location indicated by the URL. After this command the
+        local repository is connected to the remote repository.
+        
+        
+     4- Push the code in the local committed/Queue to the origin that we defined in the "git remote" command, with this command: 
+        git push -u origin master
+           ** The push all committed files to "master" branch in the remote location indicated by origin. 
+              the "master" branch is the default brach in the repository. 
+         When push files: only the files indicated as Committed will be send to the Github.com repository.	 
 
-
+	 5- After the code is in the github.com repository, assuming that a new user wants to use the code to work on it. 
+	    - then the very first time he wants to download the code he has to issue the: git clone .. command, so that all the files get
+	      downloaded to his local. After that he will need to use "git pull..." to only get what was changed after he downloaded the
+	      whole project. he will issued
+	      
+	     - Create a folder to hold the code to share with github.com: C:\Git\GitToPracticesOtherUser
+         - go to the created folder: cd \Git\GitToPracticesOtherUser    *** new folder ****
+         - We have to initialize this folder so that GitHub.com can access and understand the codes in the folder, this is creating an 
+           init file: git init
+	      git config --global user.name "HectorAHernandez"
+	      git config --global user.email "xxxx.com"
+	      
+	      get the download URL from the github.com
+	      git clone https://github.com/HectorAHernandez/DemoRestAssured.git    ** this is the very first time only: git clone, the only "git pull"
+	       
 

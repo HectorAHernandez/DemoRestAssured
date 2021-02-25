@@ -68,3 +68,6 @@ Scenario: Verify if the DeletePlace API functionality is working successfuly
 # Comment for git MORE added by New User: line # 68
 # Comment Introduced in new branch AsiaDevelop1: line #69
 # Comment Introduced in new branch AsiaDevelop1: line #70   
+
+# Comment Introduced AMERICAN Tester in new branch AsiaDevelop1: line #72
+# Comment Introduced AMERICAN Tester in new branch AsiaDevelop1: line #73
